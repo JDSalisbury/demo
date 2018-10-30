@@ -28,17 +28,12 @@ function diceRoller($sidesOnDice, $numberOfDice, $modifier){
         $dice = random_int(1, $sidesOnDice);
         $total += $dice;
     }
-    echo $total + $modifier;
+    return $total + $modifier;
 };
     
-diceRoller(4,2,10);
+$result = diceRoller(4,2,10);
     echo "<br>";
-diceRoller(4,2,10);
-    echo "<br>";
-diceRoller(4,2,100);
-    echo "<br>";
-diceRoller(4,2,1000);
-    echo "<br>";
+echo $result;
 ?>
    
    <h1><?php echo $title ?></h1>
