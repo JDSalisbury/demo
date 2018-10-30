@@ -19,7 +19,26 @@ function addTwoNumbers($num1, $num2){
 $title = "this is a dynamic title"; 
 say_Something();
 echo "<br>";
-addTwoNumbers(3, 5);
+echo "<br>";
+
+
+function diceRoller($sidesOnDice, $numberOfDice, $modifier){
+    $total = 0;
+    for($i=1; $i<=$numberOfDice; $i++){
+        $dice = random_int(1, $sidesOnDice);
+        $total += $dice;
+    }
+    echo $total + $modifier;
+};
+    
+diceRoller(4,2,10);
+    echo "<br>";
+diceRoller(4,2,10);
+    echo "<br>";
+diceRoller(4,2,100);
+    echo "<br>";
+diceRoller(4,2,1000);
+    echo "<br>";
 ?>
    
    <h1><?php echo $title ?></h1>
