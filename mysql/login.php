@@ -1,3 +1,17 @@
+<?php
+
+if(isset($_POST['submit'])){
+$username = $_POST['username'];
+$password = $_POST['password'];
+    echo $username;
+    echo "<br>";
+    echo $password;
+}
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,20 +22,27 @@
 </head>
 <body>
    <div class="container">
-       <div class="col-xs-6">
+       <div class="col-sm-6">
+          
            <form action="login.php" method="POST">
+             
+              
                <div class="form-group">
                    <label for="username">Username</label>
                    <input type="text" name="username" class="form-control">
                </div>
+               
                
                <div class="form-group">
                    <label for="password">Password</label>
                    <input type="text" name="password" class="form-control">
                </div>
                
-                <input type="text" name="submit" value="Submit" class="btn btn-primary">
+               
+                <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+                
            </form>
+           
        </div>
    </div>
     
