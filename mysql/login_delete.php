@@ -7,15 +7,8 @@ if(isset($_POST['submit'])) {
 };   
 selectAllUsersInDB();
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Document</title>
-</head>
-<body>
+<?php include "includes/header.php"?>
    <div class="container">
        <div class="col-sm-6">
           
@@ -50,6 +43,4 @@ selectAllUsersInDB();
        </div>
    </div>
     
-</body>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</html>
+<?php include "includes/footer.php"?>
