@@ -20,10 +20,21 @@
 
 
  */
-
+if(isset($_POST['submit'])){       
+$username = $_POST['username'];
+$password = $_POST['password'];
+    
+echo $username;
+}  
 	
 ?>
-
+<form action="6.php" method="POST">
+    <input type="text" name="username" placeholder="Enter Username">
+    <br>
+    <input type="password" name="password" placeholder="Enter Password">
+    <br>
+    <input type="submit" name="submit">
+</form> 
 
 </article><!--MAIN CONTENT-->
 <?php include "includes/footer.php"; ?>

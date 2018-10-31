@@ -8,11 +8,11 @@
   
 <?php
     
-$title = "this is a dynamic title"    
+
     
 ?>
    
-   <h1><?php echo $title ?></h1>
+ 
     
 </body>
 </html>
