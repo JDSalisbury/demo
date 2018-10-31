@@ -2,14 +2,30 @@
 //learing CRUD
 
 
-function showAllData() {
+function selectAllUsersInDB(){
     global $connection;
+    global $result;
     $query = "SELECT * FROM users";
     $result =  mysqli_query($connection, $query);
     
-    if(!$result){
-        die("query failed" . mysqli_error());
+     if(!$result){
+        die("query failed: SELECT * FROM users " . mysqli_error());
     }
+
+}
+
+function showAllData() {
+    
+    global $connection;
+    
+    $query = "SELECT * FROM users";
+    $result =  mysqli_query($connection, $query);
+    
+     if(!$result){
+        die("query failed: SELECT * FROM users " . mysqli_error());
+    }
+   
+   
 
    while($row = mysqli_fetch_assoc($result)){
        $id =  $row['id'];
@@ -27,6 +43,20 @@ function updateByID(){
         $query = "UPDATE users SET ";
         $query .= "username = '$username', ";
         $query .= "password = '$password' ";
+        $query .= "WHERE id = $id ";
+    
+        $result = mysqli_query($connection, $query);
+        if(!$result) {
+            die("query error");
+        };
+    
+}
+
+function deleteRows(){
+        global $connection;
+        $id = $_POST['id'];
+    
+        $query = "DELETE FROM users ";
         $query .= "WHERE id = $id ";
     
         $result = mysqli_query($connection, $query);
