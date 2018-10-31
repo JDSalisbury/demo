@@ -14,7 +14,11 @@ if(isset($_POST['submit'])){
 $username = $_POST['username'];
 $password = $_POST['password'];
     
-echo "Welcome" . " " . $username;
+    if(strlen($username) < 5){
+        echo "username has to longer than five";
+    }else {
+        echo "Welcome" . " " . $username;
+    }
 }  
 ?>
 </head>
