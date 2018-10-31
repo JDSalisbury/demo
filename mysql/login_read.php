@@ -1,6 +1,6 @@
 <?php
 
-
+//learing CRUD
     
 $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
     echo "<br>";
@@ -45,9 +45,7 @@ $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
                 ?>
                </pre>
             <?php
-           }
-           
-           
+           } 
         ?>
         
        </div>
