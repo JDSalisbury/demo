@@ -14,13 +14,13 @@ print_r($_GET);
     <title>Document</title>
 </head>
 <body>
-  <a href="get.php?id=200">click here</a>
+  
 <?php
     
-
+$id = 10;
     
 ?>
-   
+   <a href="get.php?id=<?php echo $id;?>">click here</a>
  
     
 </body>
