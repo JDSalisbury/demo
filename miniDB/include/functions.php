@@ -14,7 +14,11 @@ function grabAllFromDB(){
 function showAllinDB($result){
     while($row = mysqli_fetch_assoc($result)){
                 echo  "<pre>";
-                    print_r($row);
+                    echo $row['id'];
+                    echo "<br>";
+                    echo $row['deckname'];
+                    echo "<br>";
+                    echo $row['format'];
                 echo  "</pre>";                
             } 
 }

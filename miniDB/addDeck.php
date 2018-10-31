@@ -3,13 +3,9 @@ include "include/db.php";
 include "include/functions.php";
 
 
-grabAllFromDB();
-
 addSubmittedDeck();
 grabAllFromDB();
 ?>
-
-
 <?php include "include/header.php"?>
    <form action="addDeck.php" method="POST">
               
@@ -32,6 +28,5 @@ grabAllFromDB();
         ?>
     </div>
    
-   
-   
+      
  <?php include "include/footer.php"?>
