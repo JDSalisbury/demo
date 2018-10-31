@@ -26,10 +26,17 @@
 		Step 4 - echo the variable
 
 	*/
+        
+        $pass = "mysecretpassword";
+        $salt = "thisIsaStringthatslong";
+        $pass_encrypt = crypt($pass, $salt);
+        
+        
+        echo $pass_encrypt;
 	
 	?>
 
-
+    
 
 
 
