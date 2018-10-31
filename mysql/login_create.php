@@ -32,7 +32,7 @@ $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
    <div class="container">
        <div class="col-sm-6">
           
-           <form action="login.php" method="POST">
+           <form action="login_create.php" method="POST">
              
               
                <div class="form-group">
