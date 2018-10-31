@@ -33,6 +33,9 @@ $format = $_POST['format'];
     echo "<br>";
     echo $format;
     
+    $deckname = mysqli_real_escape_string($connection, $deckname);
+    $format = mysqli_real_escape_string($connection, $format);
+
 
     
     $query2 = "INSERT INTO decks(deckname, format)";
