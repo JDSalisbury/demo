@@ -1,11 +1,4 @@
-<?php
-if(isset($_POST['submit'])){
-    echo "Welcome";
-    
-} 
 
-    
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,11 +8,21 @@ if(isset($_POST['submit'])){
 </head>
 <body>
 
+<head>
+<?php
+if(isset($_POST['submit'])){       
+$username = $_POST['username'];
+$password = $_POST['password'];
+    
+echo "Welcome" . " " . $username;
+}  
+?>
+</head>
 
 <form action="form.php" method="POST">
-    <input type="text" placeholder="Enter Username">
+    <input type="text" name="username" placeholder="Enter Username">
     <br>
-    <input type="password" placeholder="Enter Password">
+    <input type="password" name="password" placeholder="Enter Password">
     <br>
     <input type="submit" name="submit">
 </form> 
