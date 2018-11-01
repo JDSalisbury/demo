@@ -10,13 +10,9 @@ class Car {
     
 }
 
+ 
+$volvo = new Car();
 
-//if(class_exists("Car")) {
-//    
-//    echo " it lives";
-//} else {
-//    echo "no";
-//}
-    
+$volvo->moveWheels();
 ?>
    
