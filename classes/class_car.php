@@ -3,9 +3,9 @@
     
 class Car {
 
-    var $wheels = 4;
-    var $doors = 4;
-    var $engine = 'v6';
+    public $wheels = 4;
+    public $doors = 4;
+    public $engine = 'v6';
     
     function moveWheels(){
         echo "Wheels are moving";
