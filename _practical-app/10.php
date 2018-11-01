@@ -28,7 +28,30 @@ Step 6: Call the method ShowAll
 
 		
 	*/
+
+	class Dog {
+		public $furColor;
+		public $breed;
+		public $age;
+
+		//construct not constructor also this has to touch the arrow has to touch the var
+		public function __construct($furColor, $breed, $age){
+			$this->furColor = $furColor;
+			$this->breed = $breed;
+			$this->age = $age;
+		}
+
+		public function toString(){
+			echo "The dogs fur color is: " . $this->furColor . " The dogs breed is: " . $this->breed . " and its " . $this->age . "yrs old.";
+		}
+	}
+
+	$spot = new Dog("blue", "Wolf", 10);
+
+	echo $spot -> toString();
 	
+
+
 	?>
 
 
