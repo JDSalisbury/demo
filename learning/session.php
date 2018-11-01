@@ -1,8 +1,8 @@
 <?php
 
-session_start();
-echo $_SESSION['greeting'];
-    
+//session_start();
+//$_SESSION['greeting'] = "Hello Student";
+//    
 ?>
 
 

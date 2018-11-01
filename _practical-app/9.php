@@ -15,9 +15,36 @@
 
 			<article class="main-content col-xs-8">
 			
-		
+		<a href="9.php?source=30134">Click here</a>
+		<br>
 	
 	<?php 
+                
+        $exp = time() + (60*60*24*7);
+    
+      setcookie('question2name', 'some value', $exp);
+            
+                
+                
+    if(isset($_GET['source'])){
+        echo $_GET['source'];
+        echo "<br>";
+    }
+            
+
+    if(isset($_COOKIE['question2name'])){
+        echo $_COOKIE['question2name'];
+    }
+                
+             echo "<br>";   
+    session_start();
+    
+    $_SESSION['message'] = "Hello Hello";
+                
+    if(isset($_SESSION['message'])){
+        echo $_SESSION['message'];
+        }
+    
 
 	/*  Create a link saying Click Here, and set 
 	the link href to pass some parameters and use the GET super global to see it
